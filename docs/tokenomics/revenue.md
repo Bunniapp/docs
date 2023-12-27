@@ -14,4 +14,4 @@ Bunni LPs provide liquidity through Bunni's smart contract, which holds all liqu
 
 ## Where does the protocol revenue go?
 
-Currently, the revenue is directed to the protocol treasury. Governance can pass proposals on how to distribute the revenue.
+Currently, 25% of the revenue is directed to veLIT holders through staking. This revenue share can be changed through governance proposals by veLIT holders.
