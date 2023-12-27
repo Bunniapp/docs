@@ -21,7 +21,6 @@ veLIT is obtained by locking Balancer 80LIT-20WETH LP tokens. The longer you loc
 - **Gauge weights voting**: Vote on how gauge rewards are distributed across different gauges.
 - **Boost gauge rewards**: Hold veLIT to boost your yield earned from gauges.
 - **Receive bribes for voting**: Get rewarded for voting on certain gauges.
-- **Receive protocol revenue**: Earn a share of the protocol's revenue (coming soon).
 
 ## Links
 
