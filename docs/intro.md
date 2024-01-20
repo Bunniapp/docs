@@ -24,5 +24,5 @@ Bunni has built the first such wrapper contract that represents Uniswap position
 Bunni's native token, the **Liquidity Incentive Token (LIT)**, is used to incentivize liquidity on Bunni. Bunni has improved upon the vetokenomics used by Curve to reduce farming-and-dumping and increase longevity.
 
 - **Balancer LP token as vote-locked token**: Bunni uses the Balancer 80LIT-20WETH LP token as the lock token for obtaining veLIT.
-- **Increased max boost**: Bunni gives a max of 10x boost to LPs who have veLIT, instead of the 2.5x used by Curve & Balancer. This increases the advantage of holding veLIT.
+- **Increased max boost**: Bunni gives a max of 5x boost to LPs who have veLIT, instead of the 2.5x used by Curve & Balancer. This increases the advantage of holding veLIT.
 - **Call option as reward token**: Instead of using LIT as the reward token, Bunni uses call option tokens for LIT as the reward token. This has the benefit of enabling the protocol to accumulate a large cash reserve regardless of market conditions, as well as letting loyal holders buy LIT at a discount.
