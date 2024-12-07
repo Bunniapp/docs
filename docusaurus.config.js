@@ -98,11 +98,11 @@ const config = {
                         items: [
                             {
                                 label: "Discord",
-                                href: "https://discord.gg/timelessfi",
+                                href: "https://discord.gg/bunnixyz",
                             },
                             {
                                 label: "Twitter",
-                                href: "https://twitter.com/timeless_fi",
+                                href: "https://twitter.com/bunni_xyz",
                             },
                         ],
                     },
