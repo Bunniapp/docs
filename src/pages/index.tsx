@@ -23,7 +23,7 @@ export const devLinks = [
   },
   {
     title: "Deployment Addresses",
-    href: "./docs/v2/technical/deployments/ethereum",
+    href: "./docs/v2/technical/deployments",
     text: "Find the addresses of Bunni's smart contracts",
     icon: DocumentIcon,
   },
