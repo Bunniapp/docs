@@ -8,101 +8,7 @@ sidebar_position: 1
 
 BunniHub is the main contract Liquidity Providers (LPs) interact with. Deploys pools and handles depositing and withdrawing from those pools.
 
-## Parameter Structs
 
-### DeployBunniTokenParams
-
-```solidity
-/// @param currency0 The token0 of the Uniswap V4 pool
-/// @param currency1 The token1 of the Uniswap V4 pool
-/// @param tickSpacing The tick spacing of the Uniswap V4 pool
-/// @param twapSecondsAgo The TWAP time period to use for the liquidity density function
-/// @param liquidityDensityFunction The liquidity density function to use
-/// @param hooklet The hooklet to use for the Bunni pool. If it's address(0), then a hooklet is not used.
-/// @param ldfParams The parameters for the liquidity density function
-/// @param hooks The hooks to use for the Uniswap V4 pool
-/// @param hookParams The parameters for the hooks
-/// @param vault0 The vault for token0. If address(0), then a vault is not used.
-/// @param vault1 The vault for token1. If address(0), then a vault is not used.
-/// @param minRawTokenRatio0 The minimum (rawBalance / balance) ratio for token0
-/// @param targetRawTokenRatio0 The target (rawBalance / balance) ratio for token0
-/// @param maxRawTokenRatio0 The maximum (rawBalance / balance) ratio for token0
-/// @param minRawTokenRatio1 The minimum (rawBalance / balance) ratio for token1
-/// @param targetRawTokenRatio1 The target (rawBalance / balance) ratio for token1
-/// @param maxRawTokenRatio1 The maximum (rawBalance / balance) ratio for token1
-/// @param sqrtPriceX96 The initial sqrt price of the Uniswap V4 pool
-/// @param name The name of the BunniToken
-/// @param symbol The symbol of the BunniToken
-/// @param owner The owner of the BunniToken. Only has the power to set the metadata URI.
-/// @param metadataURI The initial metadata URI of the BunniToken, containing info like description, image, etc.
-/// @param salt The salt for deploying the BunniToken via CREATE3.
-struct DeployBunniTokenParams {
-    Currency currency0;
-    Currency currency1;
-    int24 tickSpacing;
-    uint24 twapSecondsAgo;
-    ILiquidityDensityFunction liquidityDensityFunction;
-    IHooklet hooklet;
-    bool statefulLdf;
-    bytes32 ldfParams;
-    IBunniHook hooks;
-    bytes hookParams;
-    ERC4626 vault0;
-    ERC4626 vault1;
-    uint24 minRawTokenRatio0;
-    uint24 targetRawTokenRatio0;
-    uint24 maxRawTokenRatio0;
-    uint24 minRawTokenRatio1;
-    uint24 targetRawTokenRatio1;
-    uint24 maxRawTokenRatio1;
-    uint160 sqrtPriceX96;
-    bytes32 name;
-    bytes32 symbol;
-    address owner;
-    string metadataURI;
-    bytes32 salt;
-}
-```
-
-### DepositParams
-
-```solidity
-struct DepositParams {
-  PoolKey poolKey;
-  address recipient;
-  address refundRecipient;
-  uint256 amount0Desired;
-  uint256 amount1Desired;
-  uint256 amount0Min;
-  uint256 amount1Min;
-  uint256 vaultFee0;
-  uint256 vaultFee1;
-  uint256 deadline;
-}
-```
-
-### WithdrawParams
-
-```solidity
-struct WithdrawParams {
-  PoolKey poolKey;
-  address recipient;
-  uint256 shares;
-  uint256 amount0Min;
-  uint256 amount1Min;
-  uint256 deadline;
-  bool useQueuedWithdrawal;
-}
-```
-
-### QueueWithdrawParams
-
-```solidity
-struct QueueWithdrawParams {
-  PoolKey poolKey;
-  uint256 shares;
-}
-```
 
 ## Functions
 
@@ -283,6 +189,80 @@ function poolBalances(
 ```
 
 The token balances of a Bunni pool. Reserves in vaults are converted to raw token balances via `ERC4626.previewRedeem()`.
+
+## Structs
+
+### DeployBunniTokenParams
+
+```solidity
+struct DeployBunniTokenParams {
+  Currency currency0;
+  Currency currency1;
+  int24 tickSpacing;
+  uint24 twapSecondsAgo;
+  ILiquidityDensityFunction liquidityDensityFunction;
+  IHooklet hooklet;
+  LDFType: ldfType;
+  bytes32 ldfParams;
+  IBunniHook hooks;
+  bytes hookParams;
+  ERC4626 vault0;
+  ERC4626 vault1;
+  uint24 minRawTokenRatio0;
+  uint24 targetRawTokenRatio0;
+  uint24 maxRawTokenRatio0;
+  uint24 minRawTokenRatio1;
+  uint24 targetRawTokenRatio1;
+  uint24 maxRawTokenRatio1;
+  uint160 sqrtPriceX96;
+  bytes32 name;
+  bytes32 symbol;
+  address owner;
+  string metadataURI;
+  bytes32 salt;
+}
+```
+
+### DepositParams
+
+```solidity
+struct DepositParams {
+  PoolKey poolKey;
+  address recipient;
+  address refundRecipient;
+  uint256 amount0Desired;
+  uint256 amount1Desired;
+  uint256 amount0Min;
+  uint256 amount1Min;
+  uint256 vaultFee0;
+  uint256 vaultFee1;
+  uint256 deadline;
+  address referrer;
+}
+```
+
+### WithdrawParams
+
+```solidity
+struct WithdrawParams {
+  PoolKey poolKey;
+  address recipient;
+  uint256 shares;
+  uint256 amount0Min;
+  uint256 amount1Min;
+  uint256 deadline;
+  bool useQueuedWithdrawal;
+}
+```
+
+### QueueWithdrawParams
+
+```solidity
+struct QueueWithdrawParams {
+  PoolKey poolKey;
+  uint256 shares;
+}
+```
 
 ## Events
 
