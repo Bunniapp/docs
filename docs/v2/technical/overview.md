@@ -8,7 +8,7 @@ sidebar_position: 1
 
 Bunni v2 consists of the following core smart contracts:
 
-- [`BunniHub`](./core/hub): The main contract liquidity providers interact with to deposit/withdraw funds. Stores all user funds.
+- [`BunniHub`](./core/BunniHub): The main contract liquidity providers interact with to deposit/withdraw funds. Stores all user funds.
   - Is immutable, meaning it cannot be upgraded later on.
 - [`BunniHook`](./core/hook): Uniswap v4 hook responsible for handling swaps. Implements auto-rebalancing executed via [flood.bid](https://flood.bid). Uses am-AMM to recapture LVR & MEV.
   - Is immutable for deployed pools, but if a new version of `BunniHook` is deployed then new pools can use the updated version.

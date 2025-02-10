@@ -17,7 +17,7 @@ The latest version of the Bunni v2 contracts are deployed at the addresses liste
 
 | Contract | Addresses |
 | --------------- | --------------- |
-| [BunniHub](./core/hub) | [`0x000000DCeb71f3107909b1b748424349bfde5493`](https://etherscan.io/address/0x000000DCeb71f3107909b1b748424349bfde5493) |
+| [BunniHub](./core/BunniHub) | [`0x000000DCeb71f3107909b1b748424349bfde5493`](https://etherscan.io/address/0x000000DCeb71f3107909b1b748424349bfde5493) |
 | [BunniHook](./core/hook) | [`0x0010d0D5dB05933Fa0D9F7038D365E1541a41888`](https://etherscan.io/address/0x0010d0D5dB05933Fa0D9F7038D365E1541a41888) |
 | [BunniZone](./core/zone) | [`0x00000036b252d98aC5058d0d2b1ADDc9Dd0DbE0f`](https://etherscan.io/address/0x00000036b252d98aC5058d0d2b1ADDc9Dd0DbE0f) |
 | [BunniQuoter](./periphery/quoter) | [`0x000000719604D7eA57bE2d4480E429a4D3AFeF88`](https://etherscan.io/address/0x000000719604D7eA57bE2d4480E429a4D3AFeF88) |
@@ -37,7 +37,7 @@ The latest version of the Bunni v2 contracts are deployed at the addresses liste
 
 | Contract | Addresses |
 | --------------- | --------------- |
-| [BunniHub](./core/hub) | [`0x000000DCeb71f3107909b1b748424349bfde5493`](https://arbiscan.io/address/0x000000DCeb71f3107909b1b748424349bfde5493) |
+| [BunniHub](./core/BunniHub) | [`0x000000DCeb71f3107909b1b748424349bfde5493`](https://arbiscan.io/address/0x000000DCeb71f3107909b1b748424349bfde5493) |
 | [BunniHook](./core/hook) | [`0x0010d0D5dB05933Fa0D9F7038D365E1541a41888`](https://arbiscan.io/address/0x0010d0D5dB05933Fa0D9F7038D365E1541a41888) |
 | [BunniZone](./core/zone) | [`0x00000036b252d98aC5058d0d2b1ADDc9Dd0DbE0f`](https://arbiscan.io/address/0x00000036b252d98aC5058d0d2b1ADDc9Dd0DbE0f) |
 | [BunniQuoter](./periphery/quoter) | [`0x000000719604D7eA57bE2d4480E429a4D3AFeF88`](https://arbiscan.io/address/0x000000719604D7eA57bE2d4480E429a4D3AFeF88) |
@@ -53,7 +53,7 @@ The latest version of the Bunni v2 contracts are deployed at the addresses liste
 
 | Contract | Addresses |
 | --------------- | --------------- |
-| [BunniHub](./core/hub) | [`0x000000DCeb71f3107909b1b748424349bfde5493`](https://basescan.io/address/0x000000DCeb71f3107909b1b748424349bfde5493) |
+| [BunniHub](./core/BunniHub) | [`0x000000DCeb71f3107909b1b748424349bfde5493`](https://basescan.io/address/0x000000DCeb71f3107909b1b748424349bfde5493) |
 | [BunniHook](./core/hook) | [`0x0010d0D5dB05933Fa0D9F7038D365E1541a41888`](https://basescan.io/address/0x0010d0D5dB05933Fa0D9F7038D365E1541a41888) |
 | [BunniZone](./core/zone) | [`0x00000036b252d98aC5058d0d2b1ADDc9Dd0DbE0f`](https://basescan.io/address/0x00000036b252d98aC5058d0d2b1ADDc9Dd0DbE0f) |
 | [BunniQuoter](./periphery/quoter) | [`0x000000719604D7eA57bE2d4480E429a4D3AFeF88`](https://basescan.io/address/0x000000719604D7eA57bE2d4480E429a4D3AFeF88) |
@@ -72,7 +72,7 @@ The latest version of the Bunni v2 contracts are deployed at the addresses liste
 
 | Contract | Addresses |
 | --------------- | --------------- |
-| [BunniHub](./core/hub) | [`0x00000059923c01C79958099F9E488cdd4708a6C0`](https://sepolia.etherscan.io/address/0x00000059923c01C79958099F9E488cdd4708a6C0) |
+| [BunniHub](./core/BunniHub) | [`0x00000059923c01C79958099F9E488cdd4708a6C0`](https://sepolia.etherscan.io/address/0x00000059923c01C79958099F9E488cdd4708a6C0) |
 | [BunniHook](./core/hook) | [`0x00001f3b9712708127b1fcAD61cb892535951888`](https://sepolia.etherscan.io/address/0x00001f3b9712708127b1fcAD61cb892535951888) |
 | [BunniZone](./core/zone) | [`0x000000a0812A63DA7C5C13F82b14Abc72F968354`](https://sepolia.etherscan.io/address/0x000000a0812A63DA7C5C13F82b14Abc72F968354) |
 | [BunniQuoter](./periphery/quoter) | [`0x000000d6fBDa8D0D5b5a740a6A55116de7b134a4`](https://sepolia.etherscan.io/address/0x000000d6fBDa8D0D5b5a740a6A55116de7b134a4) |
