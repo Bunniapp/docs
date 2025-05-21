@@ -242,28 +242,32 @@ Remember to ensure that all values are within their appropriate ranges and that 
 The `ldfParams` are encoded as follows:
 
 ```
-| shiftMode (1 byte) | minTick (3 bytes) | length (2 bytes) | alpha (4 bytes) | unused (1 byte) | altAlpha (4 bytes) | altThreshold (3 bytes) | altThresholdDirection (1 byte) | unused (13 bytes) |
+| shiftMode (1 byte) | minTick (3 bytes) | length (2 bytes) | alpha (4 bytes) | altAlpha (4 bytes) | altThreshold (3 bytes) | altThresholdDirection (1 byte) | unused (14 bytes) |
 ```
 
 - **shiftMode** (1 byte): A `uint8` value representing the shift mode (3 for STATIC, as this distribution is always static).
 - **minTick** (3 bytes): An `int24` value representing the minimum tick of the distribution. Must be aligned to tickSpacing.
 - **length** (2 bytes): An `int16` value representing the length of the distribution in number of rounded ticks.
 - **alpha** (4 bytes): A `uint32` value representing the alpha parameter of the geometric distribution.
-- **unused** (1 byte): An unused byte, should be set to zero.
 - **altAlpha** (4 bytes): A `uint32` value representing the alternative alpha parameter.
 - **altThreshold** (3 bytes): An `int24` value representing the threshold for switching between alpha and altAlpha.
-- **altThresholdDirection** (1 byte): A `uint8` value (0 or 1) indicating the direction of the threshold comparison.
-- **unused** (13 bytes): Unused bytes, should be set to zero.
+- **altThresholdDirection** (1 byte): A `uint8` value (0 for false, 1 for true) indicating the direction of the threshold comparison.
+- **unused** (14 bytes): Unused bytes, should be set to zero.
 
 ### Important Notes
 
-1. This distribution always uses TWAP, so there's no dynamic/static distinction like in other distributions.
-2. The `alpha` and `altAlpha` values are scaled by `Q96 / ALPHA_BASE` internally. `ALPHA_BASE` is `1e8`.
-3. The distribution switches between `alpha` and `altAlpha` based on the TWAP tick and `altThreshold`.
-4. If `altThresholdDirection` is true, `altAlpha` is used when `twapTick <= altThreshold`. If false, `altAlpha` is used when `twapTick >= altThreshold`.
-5. The `alpha` and `altAlpha` must be on different sides of 1 (i.e., one < 1 and one > 1).
-6. The `altThreshold` must be within the range `(minTick, minTick + length * tickSpacing)`.
-7. The distribution is bounded to be within the range of usable ticks.
+1. This distribution requires TWAP to be enabled (`twapSecondsAgo != 0`) to trigger the alpha switching mechanism.
+2. The `shiftMode` must be STATIC (3).
+3. The `alpha` and `altAlpha` values are scaled by `Q96 / ALPHA_BASE` internally. `ALPHA_BASE` is `1e8`.
+4. The distribution switches between `alpha` and `altAlpha` based on the TWAP tick and `altThreshold`.
+5. If `altThresholdDirection` is true, `altAlpha` is used when `twapTick <= altThreshold`. If false, `altAlpha` is used when `twapTick >= altThreshold`.
+6. The `alpha` and `altAlpha` must be on different sides of 1 (i.e., one < ALPHA_BASE and one > ALPHA_BASE).
+7. The `altThreshold` must be within the range `(minTick, minTick + length * tickSpacing)`.
+8. The `minTick` must be aligned to `tickSpacing`.
+9. The `length` must be positive and the range `[minTick, minTick + length * tickSpacing]` must be within the usable tick range.
+10. Both `alpha` and `altAlpha` must be within the range `[MIN_ALPHA, MAX_ALPHA]` (from `1e3` to `12e8`) and neither can be exactly `ALPHA_BASE` (1e8).
+11. The distribution is bounded to be within the range of usable ticks.
+12. This LDF is designed to have one end of the distribution with essentially zero liquidity, so that when the alt alpha is activated, liquidity can move to a specified price to "buy the dip".
 
 ### Example Usage
 
@@ -283,12 +287,11 @@ function encodeParams(
         minTick,
         length,
         alpha,
-        bytes1(0), // unused byte
         altAlpha,
         altThreshold,
-        altThresholdDirection
+        altThresholdDirection ? uint8(1) : uint8(0)
     );
 }
 ```
 
-Remember to ensure that all values are within their appropriate ranges and that `minTick` is aligned with `tickSpacing`.
+Remember to ensure that all values are within their appropriate ranges and that `minTick` is aligned with `tickSpacing`. The `alpha` and `altAlpha` values must be on different sides of `1e8` (one < 1e8 and one > 1e8), and the `altThreshold` must be within the range `(minTick, minTick + length * tickSpacing)`.
