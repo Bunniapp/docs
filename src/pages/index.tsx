@@ -36,9 +36,9 @@ export const Guides = [
     to: "./docs/v2/overview",
   },
   {
-    title: "Providing Liquidity",
-    text: "Learn about how to provide liquidity on Bunni v2",
-    to: "./docs/v2/guides/creating-a-pool/initialization",
+    title: "Creating a Pool",
+    text: "Learn about how to create a pool on Bunni v2",
+    to: "./docs/v2/guides/pool-creation",
   },
   {
     title: "Example Scenarios",

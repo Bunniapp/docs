@@ -79,7 +79,7 @@ const config = {
                     },
                     {
                         type: "doc",
-                        docId: "v2/guides/creating-a-pool/initialization",
+                        docId: "v2/guides/pool-creation",
                         position: "left",
                         label: "Guides",
                     },
@@ -101,8 +101,8 @@ const config = {
                                 href: "https://discord.gg/bunnixyz",
                             },
                             {
-                                label: "Twitter",
-                                href: "https://twitter.com/bunni_xyz",
+                                label: "X",
+                                href: "https://x.com/bunni_xyz",
                             },
                         ],
                     },
