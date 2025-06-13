@@ -38,7 +38,7 @@ The latest version of the Bunni v2 contracts are deployed at the addresses liste
 | OptionsToken | [`0x000000Dc51B82DC9C14c2c034341c912907d0d59`](https://etherscan.io/address/0x000000Dc51B82DC9C14c2c034341c912907d0d59) |
 | BunniHookOracle | [`0x0000001cC485ca6D3C966fBcbA7dba6302c45BA9`](https://etherscan.io/address/0x0000001cC485ca6D3C966fBcbA7dba6302c45BA9) |
 | FeeDistributor | [`0x000000dd5e3922232566fDAC8cb8bf4e7e4b70E8`](https://etherscan.io/address/0x000000dd5e3922232566fDAC8cb8bf4e7e4b70E8) |
-| BunniZapIn | [`0x00000078461ba36138786f6DE304EC6De3cE683d`](https://etherscan.io/address/0x00000078461ba36138786f6DE304EC6De3cE683d) |
+| BunniZapIn | [`0x0000000000dFE4c0014A4fB7Fc63BB174b8aDB93`](https://etherscan.io/address/0x0000000000dFE4c0014A4fB7Fc63BB174b8aDB93) |
 
 ### Arbitrum: 42161
 
@@ -58,7 +58,7 @@ The latest version of the Bunni v2 contracts are deployed at the addresses liste
 | MasterBunni | [`0x0000009856ebF1B73B431Fb59F2a2F200E9e78B0`](https://arbiscan.io/address/0x0000009856ebF1B73B431Fb59F2a2F200E9e78B0) |
 | OptionsToken | [`0x000000Dc51B82DC9C14c2c034341c912907d0d59`](https://arbiscan.io/address/0x000000Dc51B82DC9C14c2c034341c912907d0d59) |
 | BunniHookOracle | [`0x0000001cC485ca6D3C966fBcbA7dba6302c45BA9`](https://arbiscan.io/address/0x0000001cC485ca6D3C966fBcbA7dba6302c45BA9) |
-| BunniZapIn | [`0x00000078461ba36138786f6DE304EC6De3cE683d`](https://arbiscan.io/address/0x00000078461ba36138786f6DE304EC6De3cE683d) |
+| BunniZapIn | [`0x0000000000dFE4c0014A4fB7Fc63BB174b8aDB93`](https://arbiscan.io/address/0x0000000000dFE4c0014A4fB7Fc63BB174b8aDB93) |
 
 ### Base: 8453
 
@@ -78,7 +78,7 @@ The latest version of the Bunni v2 contracts are deployed at the addresses liste
 | MasterBunni | [`0x0000009856ebF1B73B431Fb59F2a2F200E9e78B0`](https://basescan.io/address/0x0000009856ebF1B73B431Fb59F2a2F200E9e78B0) |
 | OptionsToken | [`0x000000Dc51B82DC9C14c2c034341c912907d0d59`](https://basescan.io/address/0x000000Dc51B82DC9C14c2c034341c912907d0d59) |
 | BunniHookOracle | [`0x0000001cC485ca6D3C966fBcbA7dba6302c45BA9`](https://basescan.io/address/0x0000001cC485ca6D3C966fBcbA7dba6302c45BA9) |
-| BunniZapIn | [`0x00000078461ba36138786f6DE304EC6De3cE683d`](https://basescan.io/address/0x00000078461ba36138786f6DE304EC6De3cE683d) |
+| BunniZapIn | [`0x0000000000dFE4c0014A4fB7Fc63BB174b8aDB93`](https://basescan.io/address/0x0000000000dFE4c0014A4fB7Fc63BB174b8aDB93) |
 
 ### Unichain: 130
 
@@ -98,7 +98,7 @@ The latest version of the Bunni v2 contracts are deployed at the addresses liste
 | MasterBunni | [`0x0000009856ebF1B73B431Fb59F2a2F200E9e78B0`](https://uniscan.xyz/address/0x0000009856ebF1B73B431Fb59F2a2F200E9e78B0) |
 | OptionsToken | [`0x000000Dc51B82DC9C14c2c034341c912907d0d59`](https://uniscan.xyz/address/0x000000Dc51B82DC9C14c2c034341c912907d0d59) |
 | BunniHookOracle | [`0x0000001cC485ca6D3C966fBcbA7dba6302c45BA9`](https://uniscan.xyz/address/0x0000001cC485ca6D3C966fBcbA7dba6302c45BA9) |
-| BunniZapIn | [`0x00000078461ba36138786f6DE304EC6De3cE683d`](https://uniscan.xyz/address/0x00000078461ba36138786f6DE304EC6De3cE683d) |
+| BunniZapIn | [`0x0000000000dFE4c0014A4fB7Fc63BB174b8aDB93`](https://uniscan.xyz/address/0x0000000000dFE4c0014A4fB7Fc63BB174b8aDB93) |
 
 ### BSC: 56
 
@@ -118,7 +118,7 @@ The latest version of the Bunni v2 contracts are deployed at the addresses liste
 | MasterBunni | [`0x0000009856ebF1B73B431Fb59F2a2F200E9e78B0`](https://bscscan.com/address/0x0000009856ebF1B73B431Fb59F2a2F200E9e78B0) |
 | OptionsToken | [`0x000000Dc51B82DC9C14c2c034341c912907d0d59`](https://bscscan.com/address/0x000000Dc51B82DC9C14c2c034341c912907d0d59) |
 | BunniHookOracle | [`0x0000001cC485ca6D3C966fBcbA7dba6302c45BA9`](https://bscscan.com/address/0x0000001cC485ca6D3C966fBcbA7dba6302c45BA9) |
-| BunniZapIn | [`0x00000078461ba36138786f6DE304EC6De3cE683d`](https://bscscan.com/address/0x00000078461ba36138786f6DE304EC6De3cE683d) |
+| BunniZapIn | [`0x0000000000dFE4c0014A4fB7Fc63BB174b8aDB93`](https://bscscan.com/address/0x0000000000dFE4c0014A4fB7Fc63BB174b8aDB93) |
 
 ## Testnet Deployments
 
@@ -171,6 +171,7 @@ For reference, here are the addresses from previous major versions. **Use the cu
 | [Carpeted Geometric LDF](./ldf/params#carpetedgeometricdistribution) | `0x00000000B66022c7e4Ff478EcB16600BA8a1E37A` |
 | [Carpeted Double Geometric LDF](./ldf/params#carpeteddoublegeometricdistribution) | `0x00000000765f7E6236e75B9B9a5118557c18e0fE` |
 | [Buy The Dip Geometric LDF](./ldf/params#buythedipgeometricdistribution) | `0x000000003691653855719A5722Eb10f6d9636936` |
+| BunniZapIn | `0x00000078461ba36138786f6DE304EC6De3cE683d` |
 
 ### Version 1.2.0 (June 2, 2025) - Unichain Only
 
@@ -186,6 +187,7 @@ For reference, here are the addresses from previous major versions. **Use the cu
 | [Carpeted Geometric LDF](./ldf/params#carpetedgeometricdistribution) | `0x0000009d24460d8F6223E39Eb5fF421E4413cA1F` |
 | [Carpeted Double Geometric LDF](./ldf/params#carpeteddoublegeometricdistribution) | `0x000000E22477C615223E430266AD8d5285636e30` |
 | [Buy The Dip Geometric LDF](./ldf/params#buythedipgeometricdistribution) | `0x000000B2C6052cE049C49C3f0899992074F0462d` |
+| BunniZapIn | `0x000000C637506d6B724Ba176259C5Ccaa489909F` |
 
 ## Version History
 
