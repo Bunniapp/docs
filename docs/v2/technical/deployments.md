@@ -45,15 +45,15 @@ The latest version of the Bunni v2 contracts are deployed at the addresses liste
 | Contract | Addresses |
 | --------------- | --------------- |
 | [BunniHub](./core/BunniHub) | [`0x000000000049C7bcBCa294E63567b4D21EB765f1`](https://arbiscan.io/address/0x000000000049C7bcBCa294E63567b4D21EB765f1) |
-| [BunniHook](./core/hook) | [`0x000052423c1dB6B7ff8641b85A7eEfc7B2791888`](https://arbiscan.io/address/0x000052423c1dB6B7ff8641b85A7eEfc7B2791888) |
+| [BunniHook](./core/hook) | [`0x0000EB22c45bDB564F985acE0B4d05a64fa71888`](https://arbiscan.io/address/0x0000EB22c45bDB564F985acE0B4d05a64fa71888) |
 | [BunniZone](./core/zone) | [`0x00000000Ff3ba1257149f69CD0d22263DD0A14ea`](https://arbiscan.io/address/0x00000000Ff3ba1257149f69CD0d22263DD0A14ea) |
 | [BunniQuoter](./periphery/quoter) | [`0x00000000E15009D51C6d57f7164f4Ed4996ae55C`](https://arbiscan.io/address/0x00000000E15009D51C6d57f7164f4Ed4996ae55C) |
-| [Uniform LDF](./ldf/params#uniformdistribution) | [`0x00000000d5248262c18C5a8c706B2a3E740B8760`](https://arbiscan.io/address/0x00000000d5248262c18C5a8c706B2a3E740B8760) |
-| [Geometric LDF](./ldf/params#geometricdistribution) | [`0x00000000B79037C909ff75dAFbA91b374bE2124f`](https://arbiscan.io/address/0x00000000B79037C909ff75dAFbA91b374bE2124f) |
-| [Double Geometric LDF](./ldf/params#doublegeometricdistribution) | [`0x000000004a3e16323618D0E43e93b4DD64151eDB`](https://arbiscan.io/address/0x000000004a3e16323618D0E43e93b4DD64151eDB) |
-| [Carpeted Geometric LDF](./ldf/params#carpetedgeometricdistribution) | [`0x000000007cA9919151b275FABEA64A4f557Aa1F6`](https://arbiscan.io/address/0x000000007cA9919151b275FABEA64A4f557Aa1F6) |
-| [Carpeted Double Geometric LDF](./ldf/params#carpeteddoublegeometricdistribution) | [`0x000000000b757686c9596caDA54fa28f8C429E0d`](https://arbiscan.io/address/0x000000000b757686c9596caDA54fa28f8C429E0d) |
-| [Buy The Dip Geometric LDF](./ldf/params#buythedipgeometricdistribution) | [`0x00000000a7A466ca990dE359E77B9E492d8a2d05`](https://arbiscan.io/address/0x00000000a7A466ca990dE359E77B9E492d8a2d05) |
+| [Uniform LDF](./ldf/params#uniformdistribution) | [`0x000000d93DF3306877eCc66c6526c6DfC163D8b4`](https://arbiscan.io/address/0x000000d93DF3306877eCc66c6526c6DfC163D8b4) |
+| [Geometric LDF](./ldf/params#geometricdistribution) | [`0x0000004f528E4547fcC40710CC3BFC6b2aaD4cE3`](https://arbiscan.io/address/0x0000004f528E4547fcC40710CC3BFC6b2aaD4cE3) |
+| [Double Geometric LDF](./ldf/params#doublegeometricdistribution) | [`0x00000079CEE5806435ED88Fd6BfA4A465c8D2F19`](https://arbiscan.io/address/0x00000079CEE5806435ED88Fd6BfA4A465c8D2F19) |
+| [Carpeted Geometric LDF](./ldf/params#carpetedgeometricdistribution) | [`0x0000009d24460d8F6223E39Eb5fF421E4413cA1F`](https://arbiscan.io/address/0x0000009d24460d8F6223E39Eb5fF421E4413cA1F) |
+| [Carpeted Double Geometric LDF](./ldf/params#carpeteddoublegeometricdistribution) | [`0x000000E22477C615223E430266AD8d5285636e30`](https://arbiscan.io/address/0x000000E22477C615223E430266AD8d5285636e30) |
+| [Buy The Dip Geometric LDF](./ldf/params#buythedipgeometricdistribution) | [`0x000000B2C6052cE049C49C3f0899992074F0462d`](https://arbiscan.io/address/0x000000B2C6052cE049C49C3f0899992074F0462d) |
 | BUNNI | [`0x000000C396558ffbAB5Ea628f39658Bdf61345b3`](https://arbiscan.io/token/0x000000C396558ffbAB5Ea628f39658Bdf61345b3) |
 | MasterBunni | [`0x0000009856ebF1B73B431Fb59F2a2F200E9e78B0`](https://arbiscan.io/address/0x0000009856ebF1B73B431Fb59F2a2F200E9e78B0) |
 | OptionsToken | [`0x000000Dc51B82DC9C14c2c034341c912907d0d59`](https://arbiscan.io/address/0x000000Dc51B82DC9C14c2c034341c912907d0d59) |
